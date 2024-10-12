@@ -1,10 +1,13 @@
 package T_240927;
 
+// 메소드
 interface Countable 
 {
+	// 메소드
 	int count();
 }
 
+// 메소드
 abstract class CountableBase implements Countable 
 {
 	 protected String name;
@@ -17,6 +20,7 @@ abstract class CountableBase implements Countable
 	 }
 }
 
+// 메소드
 //Bird 클래스 구현
 class Bird extends CountableBase 
 {
@@ -36,7 +40,7 @@ class Bird extends CountableBase
 	 }
 }
 
-
+// 메소드
 class Tree extends CountableBase 
 {
 	 Tree(String name, int num) 
@@ -55,13 +59,15 @@ class Tree extends CountableBase
 	 }
 }
 
-
+// 메소드
 public class CountTest 
 {
 	 public static void main(String[] args) 
 	 {
+	     // 스택
 	     Countable[] countables = 
 	     {
+		 // 힙
 	         new Bird("앵무새", 5),
 	         new Bird("독수리", 2),
 	         new Tree("소나무", 10),
